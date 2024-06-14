@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
+}
+img {
+  max-width: 100%;
+}
+/* サイト全体のコンテンツ幅を設定 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* 中のコンテンツ部分の最大幅を設定 */
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  margin-top: 60px;
+}
+/*
+h1タグ
+line-height にh1タグの高さよりも小さい値「1px」を指定することで、
+h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
+「line-height: 0;」を指定してもOKです
+*/
+#header .site-title {
+  width: 160px;
+  line-height: 1px;
+  margin-bottom: 15px;
+}
+/* aタグのリンク範囲を親要素のサイズに広げる */
+#header .site-title a {
+  display: block;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 60px;
+}
+
+/*-------------------------------------------
+Index
+-------------------------------------------*/
+#index {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 60px;
+}
+/*
+olタグはリストの先頭に番号がつくので、その分だけ左に移動
+※番号を消したい場合は、「list-style-type: none;」を設定
+*/
+#index .index-list {
+  margin-left: 20px;
+}
+#index .index-list li {
+  margin-bottom: 20px;
+}
+/* リストの最後は下にマージンをつけない */
+#index .index-list li:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------------------------------
+Detail
+-------------------------------------------*/
+#detail {
+  margin-bottom: 100px;
+}
+#detail .content {
+  display: flex;
+  align-items: flex-start;
+}
+#detail .content .title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#detail .content .img {
+  width: 270px;
+  margin-right: 60px;
+}
+#detail .content .text p {
+  margin-bottom: 20px;
+}
+#detail .content dl {
+  display: flex;      /* dt、ddを横並びにする */
+  flex-wrap: wrap;    /* dtとddが100%になったら、横並びを折り返す */
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+}
+#detail .content dt {
+  width: 25%;
+}
+#detail .content dd {
+  width: 75%;
+}
+#detail .content .link {
+  color: #333;
+}
+#detail .content .link:hover {
+  opacity: 0.8;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.625rem;
+  padding: 15px 0;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    padding: 0 10px;
+  }
+
+  /*-------------------------------------------
+  Mainvisual
+  -------------------------------------------*/
+  #mainvisual {
+    padding: 0 10px;
+  }
+
+  /*-------------------------------------------
+  Detail
+  -------------------------------------------*/
+  #detail .content {
+    flex-direction: column;  /* 縦並びにする */
+  }
+  #detail .content .img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
