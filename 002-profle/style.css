@@ -1,0 +1,57 @@
+html {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Meiryo", sans-serif;
+    background-color: #fff;
+  }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    background-color: #393E46;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+header nav a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #24292E;
+}
+
+header nav a:hover{
+    opacity: 0.7;
+}
+
+
+.mainvisual img{
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    /* text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-skip-ink: auto; */
+    border-bottom: solid 1px #24292E;
+    width: 100%;
+}
+
+#about .content {
+    display: flex;
+    /* margin: 0 auto; */
+
+}
+
+
+
+@media screen and (max-width:375px) {
+    
+}
