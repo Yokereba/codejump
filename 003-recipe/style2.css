@@ -58,10 +58,23 @@ ul {
 }
 
 .flex .recipe .zairyo-list {
+
+
     display: flex;
     flex-wrap: wrap;
 }
 
+.flex .recipe .zairyo-list dt {
+    width:85%;
+}
+
+.flex .recipe .zairyo-list dd {
+    width: 15%;
+}
+
+.flex .recipe .step-list li{
+    margin-left: 20px;
+}
 /* li {
   list-style: none;
 } */
