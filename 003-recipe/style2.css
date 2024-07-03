@@ -66,66 +66,69 @@ ul {
 
 .flex .recipe .zairyo-list dt {
     width:85%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
 }
 
 .flex .recipe .zairyo-list dd {
     width: 15%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    text-align: right;
 }
 
 .flex .recipe .step-list li{
-    margin-left: 20px;
+  border-bottom: dotted 1px #ccc;
+  padding: 6px 0;
+  margin-left: 20px;
 }
-/* li {
-  list-style: none;
-} */
-/* .site-title {
-  width: 120px;
-  line-height: 1px;
-  padding: 10px 0;
-} */
-/* .site-title a {
-  display: block;
-} */
-/* .section-title {
-  display: inline-block;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 60px;
-  border-bottom: solid 1px #383e45;
-} */
-/* .content-title {
-  font-size: 1rem;
-  margin: 10px 0;
-} */
-/* .wrapper {
-  max-width: 960px;
-  margin: 0 auto 100px auto;
-  padding: 0 4%;
-  text-align: center;
-} */
-
-
 
 
 @media screen and (max-width: 600px) {
-  /* #mainvisual {
-      height: calc(100vh-60px);
-  } */
-  
-  /* #about .content {
-      flex-direction: column;
-  } */
-  /* #about img {
-      margin: 0 auto 10px auto;
-  } */
-  /* #bicycle ul {
-      flex-direction: column;
-  }  */
+  .flex {
+    flex-direction: column;
+  }
 
-  /* #bicycle li {
-      width: 100%;
-      margin-bottom: 30px;
-  }  */
+  .flex .image{
+    width: 100%;
+  }
+
+  .flex .image img {
+    height: auto;
+  }
+
+  .flex .recipe {
+    width: 100%;
+  }
+
+
 }
 
+.btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
 
+.btn a {
+  display: inline-block;
+  border: solid 1px #2b2a27;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 18px 60px;
+
+}
+#footer {
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 20px;
+}
+
+#footer .sns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#footer .sns li{
+  margin: 0 10px;
+}
