@@ -1,0 +1,288 @@
+
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2a2a2a;
+  font-size: 0.875rem;
+  font-family: "Arial","Hiragino Sans","Helvetica Neue",   "Meiryo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.sec-title {
+    font-size :1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: #2a2a2a;
+    border: solid 1px #2a2a2a;
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 14px 36px;
+    margin-top: 30px;
+
+}
+
+#header {
+    height: 100vh;
+    background-image: url(img\ 4/mainvisual.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+#header .site-title {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#magazine {
+    text-align: center;
+    margin-bottom: 80px s;
+}
+
+#magazine .flex-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#magazine .flex-item .item {
+    width: 49%;
+    position: relative;
+}
+
+#magazine .flex-item .item .text {
+    max-width: 290px;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+#magazine .flex-item .item .text .title {
+    font-size: 1.25rem;
+    margin-bottom: 2px;
+}
+
+#fashion {
+    height: 520px;
+    background-image:url(img\ 4/fashion.jpg);   
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.catalog-antique {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.catalog-antique .sec-title {
+    margin-bottom: 40px;
+}
+
+.catalog-antique .flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-antique .item {
+    width: 48%;
+    text-align: center;
+}
+
+.catalog-antique .item img {
+    width: 100%;
+}
+
+.catalog-antique .item p {
+    margin-bottom: 30px;
+    text-align: left;
+
+}
+.catalog-antique .item p:last-child {
+    margin-bottom: 0;
+}
+
+
+#footer {
+    background-color: #333;
+    font-size: 0.75rem;
+}
+#footer .flex-item {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#footer .item {
+    width: 33%;
+    line-height: 2;
+}
+
+#footer .item:first-child {
+    padding: 60px 0;
+}
+
+#footer .item li::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+#footer .item .title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+#footer .copyright {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+/* img {
+  max-width: 100%;
+} */
+/* li {
+  list-style: none;
+} */
+/* .site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+} */
+/* .site-title a {
+  display: block;
+} */
+/* .section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+} */
+/* .content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+} */
+/* .wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+} */
+
+
+
+
+@media screen and (max-width: 896px) {
+
+    #magazine .flex-item {
+        flex-direction: column;
+    }
+
+    #magazine .flex-item .item{
+        width: 100%;
+    }
+
+    #magazine .flex-item .item:first-child{
+        margin-bottom: 30px;
+    }
+
+    #fashion {
+        padding-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    .catalog-antique{
+        padding: 30px 0;
+    }
+
+    .catalog-antique .flex-item {
+        flex-direction: column;
+    }
+    .catalog-antique .item {
+        width: 100%;
+
+    }
+
+    .catalog-antique .item.item:first-child {
+        margin-bottom: 60px;
+    }
+    
+    #footer .flex-item {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    #footer .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #footer .item:first-child {
+        text-align: center;
+        padding: 0;
+    }
+    /* #mainvisual {
+      height: calc(100vh-60px);
+  } */
+  
+  /* #about .content {
+      flex-direction: column;
+  } */
+  /* #about img {
+      margin: 0 auto 10px auto;
+  } */
+  /* #bicycle ul {
+      flex-direction: column;
+  }  */
+
+  /* #bicycle li {
+      width: 100%;
+      margin-bottom: 30px;
+  }  */
+}
+
+

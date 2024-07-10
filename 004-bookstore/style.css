@@ -1,0 +1,159 @@
+
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+
+}
+body {
+  color: #2a2a2a;
+  /* font-size: 0.9rem; */
+  font-family: "Arial" , "Hiragino Sans" , "Hiragino Kaku Gothic ProN" , "Meiryo" ,"sans-serif"
+  ;
+}
+a {
+  text-decoration: none;
+}
+
+#mainvisual img {
+    width: 100%;
+    height : 934px;
+    object-fit: cover; 
+    position: relative;
+    margin-bottom: 50px;
+}
+#mainvisual h1 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #fff;
+    background-color: black;
+    font-size: 2em;
+}
+
+#introduction {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.text-title {
+    font-size: 150%;
+    margin: 0;
+}
+p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+#prodcut {
+    display: flex;
+    justify-content:space-between;
+}
+#archive {
+  position: relative;
+
+}
+
+#archive .product-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    /* top: 0;
+    left: 0; */
+    /* z-index: 10; */
+}
+
+#prodcut #archive img {
+    width: 100%;
+    max-width: 575px;
+    margin-right: 20px;
+}
+
+#prodcut #new img {
+    width: 100%;
+    max-width: 575px;
+    margin-left: 20px;
+}
+
+.product-text {
+    background-color: black;
+    opacity: 30%;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+.product-text .text-title {
+    color: #fff;
+    font-weight:bold;
+    opacity: 100%;
+}
+
+.product-text p {
+    color: #fff;
+    font-weight:bold;
+    opacity: 100%;
+}
+
+#fashion&style {
+    background-color: #f6f6f6;
+    margin-top: 50px;
+}
+/* img {
+  max-width: 100%;
+} */
+/* li {
+  list-style: none;
+} */
+/* .site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+} */
+/* .site-title a {
+  display: block;
+} */
+/* .section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+} */
+/* .content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+} */
+/* .wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+} */
+
+
+
+
+@media screen and (max-width: 896px) {
+  /* #mainvisual {
+      height: calc(100vh-60px);
+  } */
+  
+  /* #about .content {
+      flex-direction: column;
+  } */
+  /* #about img {
+      margin: 0 auto 10px auto;
+  } */
+  /* #bicycle ul {
+      flex-direction: column;
+  }  */
+
+  /* #bicycle li {
+      width: 100%;
+      margin-bottom: 30px;
+  }  */
+}
+
+
