@@ -1,0 +1,243 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #2a2a2a;
+    /* font-size: 0.9rem; */
+    font-family: "Arial" , "Hiragino Sans" , "Hiragino Kaku Gothic ProN" , "Meiryo" ,"sans-serif";
+    /* background-color: #2a2a2a; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7 ;
+}
+
+
+.header-relative {
+    position: relative;
+    height : 100vh;   
+}
+
+img.site-title{
+    height : 100vh;
+    width: 1410px;
+    position: absolute;
+    left: 50%;
+    margin-left: -705px;
+}
+
+img.logo{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#magazine {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.sec-flex {
+    display: flex;
+    /* flex-flow: column; */
+    margin: 100px auto;
+
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.text {
+    margin: 0;
+}
+p {
+    font-size: 0.9rem;
+}
+
+.item {
+    padding: 15px;
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+}
+
+#magazine .sec-flex .item .sec-flex-text {
+    background-color:rgba(0,0, 0, 0.6) ;
+    color: #fff;    
+    font-weight: bold;
+    width: 260px;
+    padding: 20px ;
+}
+
+/* #magazine .sec-flex .item .sec-flex-text h2 {
+    color: #fff;
+    opacity: 1;
+}
+
+#magazine .sec-flex .item .sec-flex-text p {
+    color: #fff;
+    opacity: 1;
+} */
+
+#magazine .sec-flex .item {
+    position: relative;
+}
+
+#magazine .sec-flex .item .sec-flex-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fashion {
+    text-align: center;
+    /* position: relative; */
+    margin-top: 60px;
+    background-image: url(../004-bookstore/img\ 4/fashion.jpg);
+    height: 540px;
+    background-position : center top ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* #fashion img{
+    width: 1410px;
+    left: 50%;
+    margin-left: -705px;
+    position: absolute;
+} */
+
+#fashion .sec-title .title {
+    padding: 50px 0 20px 0;
+}
+
+#fashion .btn {
+    color: #2a2a2a;
+    border: solid 1px #2a2a2a ;
+    display : inline-block ;
+    font-size : 0.750rem ;
+    padding : 14px 36px ;
+    margin-top : 30px ;
+    /* position: absolute; */
+}
+
+#catalog-antique {
+    background-color: #F5F5F5;
+
+}
+
+#catalog-antique .sec-flex .item .sec-flex-text .title{
+ margin-top: 20px;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+#catalog-antique .sec-flex .item .sec-flex-text ul{
+    font-size: 0.85rem;
+    list-style-type: none;
+    /* padding: 10px 0; */
+ }
+
+ #catalog-antique .sec-flex .item .sec-flex-text li{
+    padding: 10px 0;
+    /* text-align: center; */
+ }
+
+ #catalog-antique .btn {
+    color: #2a2a2a;
+    border: solid 1px #2a2a2a ;
+    /* display : inline-block ; */
+    font-size : 0.750rem ;
+    padding : 14px 16px ;
+    margin: 30px auto;
+    /* display: flex;
+    justify-content: center; */
+    /* position: absolute; */
+    width: 100px;
+    text-align: center;
+}  
+
+.footer-list1 ul {
+    list-style: none;
+    font-size: 0.8rem;
+    padding-inline-start: 0;
+}
+.footer-list1 li::before {
+    content: "-";
+    margin-right: 3px;
+
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+#footer-flex {
+    background-color: #333333;
+    color: #fff;
+    padding: 25px ;
+    display: flex ;
+    align-items: center;
+
+}
+.footer-list2 p {
+    font-size: 0.8rem;
+}
+
+#footer-flex .footer-logo {
+    width: 33%;
+    text-align: center;
+}
+#footer-flex .footer-list1 {
+    width: 33%;
+}
+
+#footer-flex .footer-list2 {
+    width: 33%;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+footer .copyright p {
+
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 896px) {
+    .sec-flex {
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+    
+    }
+    #footer-flex {
+        flex-direction: column;
+    }
+
+    #footer-flex .footer-logo {
+        width: 100%;
+    }
+
+    #footer-flex .footer-list1 {
+        width: 100%;
+    }
+    
+    #footer-flex .footer-list2 {
+        width: 100%;
+    }
+    
+}
