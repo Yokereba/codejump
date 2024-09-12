@@ -1,0 +1,63 @@
+
+@charset "UTF-8";
+
+body {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+  /* background-color: antiquewhite; */
+}
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ul li{ */
+  /* list-style: none; */
+/* } */
+
+/* headder */
+
+
+
+/* mainvisual */
+
+
+
+/* section1 */
+
+
+
+/* section2 */
+
+
+
+/* footer */
+.copyright {
+  text-align: center;
+}
+
+#footer p {
+  font-size: 0.5rem;
+}
+
+/************************
+ レスポンシブ
+ ************************/
+ /* ブレークポイントは600pxです。
+ 
+ @media screen and (max-width: 600px) {
+
+
+
+ }
+ 
