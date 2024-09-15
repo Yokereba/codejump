@@ -1,0 +1,205 @@
+
+@charset "utf-8";
+
+body {
+  max-width: 1000px;
+  padding: 0 4%;
+  margin: 0 auto;
+  /* background-color: antiquewhite; */
+}
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ul li{ */
+  /* list-style: none; */
+/* } */
+
+/* headder */
+.site-title img{
+  margin-top: 60px;
+  width: 200px;
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  /* margin-top: 50px; */
+}
+/* mainvisual */
+/* メインビジュアルが1000px、中のコンテンツが800pxです。 */
+#mainvisual img {
+  width: 1000px;
+}
+#mainvisual {
+  margin-bottom: 60px;
+}
+
+/* INDEX */
+/* グレー背景にして枠線を引きます。 */
+#index {
+  padding-top: 30px;
+  background-color: #f5f5f5;
+  
+}
+
+#index ol {
+  border: 1px solid #000;
+  padding: 0 150px;
+  margin: 10px auto 50px auto ;
+  /* text-align: center; */
+  /* display: /; */
+  /* justify-content: center; */
+}
+
+.index-list{
+  display: flex;
+  justify-content: center;
+  /* padding: 40px; */
+}
+
+
+#index li {
+  margin: 20px 0;
+  font-size: 0.85rem;
+}
+
+/* PHOTOS */
+/* 2列の横並びに配置します。 */
+#photos {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+#photos img {
+  margin: 5px;  
+  
+}
+.container-left {
+  margin-right: 15px;
+}
+
+
+/* DETAIL */
+#detail {
+  padding-top: 30px;
+  padding-bottom:40px ;
+  background-color: #f5f5f5;
+  font-size: 0.85rem;
+  margin-bottom: 70px;  
+}
+
+.detail-container {
+  display: flex;
+  padding: 20px 80px;
+}
+
+.detail-container .text-left {
+  margin-right: 40px;
+  border-right: 1px solid #000;
+  width: 250px;
+}
+
+.text-right a {
+  text-decoration: underline;
+}
+
+
+/* .text-left {
+  background-color: aqua;
+  
+} */
+/* 出版情報とテキストを横並びに配置します。
+間に罫線を引きます。 */
+
+
+/* footer */
+.copyright {
+  text-align: center;
+}
+
+#footer p {
+  font-size: 0.6rem;
+}
+
+/************************
+ レスポンシブ
+ ************************/
+ /* ブレークポイントは1024pxです。
+ 画像エリアの4枚の画像は1列で縦に並べます。
+ DETAILは出版情報とテキストを縦に並べて、間に罫線を引きます。 */
+ 
+ @media screen and (max-width: 1024px) {
+
+  #mainvisual img {
+    width: 100%;
+  }  
+  #index {
+
+    margin-bottom: 50px;
+  }
+
+  #photos {
+    display: inline;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  container-right {
+    margin-bottom50px s: ;
+  }
+
+  #detail {
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  .detail-container {
+    display: inline;
+    padding: 20px 80px;
+    padding: 20px;
+  }
+  
+  .detail-container .text-left {
+    margin-right: 40px;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    /* padding: 20px; */
+    /* margin: 20px; */
+  }
+
+  .text-left {
+    padding-bottom: 40px;
+  }
+
+  .text-right {
+    margin-top: 40px;
+  }
+  
+  .text-right a {
+    text-decoration: underline;
+  }
+  
+  
+
+ }
+ 
