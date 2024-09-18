@@ -156,6 +156,10 @@ a {
 
     margin-bottom: 50px;
   }
+  #index ol {
+    padding: 0 20px;
+  }
+
 
   #photos {
     display: inline;
@@ -164,7 +168,7 @@ a {
   }
 
   container-right {
-    margin-bottom50px s: ;
+    margin-bottom : 50px;
   }
 
   #detail {
