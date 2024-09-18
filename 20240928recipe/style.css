@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* フォント
+下記の順で指定します。
+Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif */
+
+/* コンテンツ幅
+全幅表示です。 */
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+  max-width: 100%;
+  /* padding: 0 4%; */
+  /* margin: 0 auto; */
+  /* background-color: antiquewhite; */
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ul li{ */
+/* list-style: none; */
+/* } */
+
+/* headder */
+
+
+
+/* mainvisual */
+/* メインビジュアル
+全幅表示で、高さはブラウザの高さに合わせます。 */
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* title */
+#title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#title h1 {
+  font-size: 2rem;
+}
+
+
+/* photos
+画像の横並び
+3枚の画像を均等に配置して全幅で表示します。
+高さは500px固定で、画面サイズに合わせて画像が拡大、縮小します。 */
+
+#photos {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+#photos img {
+  height: 500px;
+  width: 33vw;
+  object-fit: cover;
+}
+
+/* button */
+.button {
+  text-align: center;
+  padding: 18px 60px;
+  border: 1px solid #000;
+  width: 200px;
+  margin: 0 auto 90px auto;
+
+}
+
+.button a {
+  font-size: 0.9rem;
+}
+
+
+/* footer */
+
+#footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#footer a {
+  padding: 10px 10px 40px 10px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+/* SNSのリンクを横並びで中央に配置します。 */
+
+
+.copyright {
+  text-align: center;
+}
+
+#footer p {
+  font-size: 0.5rem;
+}
+
+/************************
+ レスポンシブ
+ ************************/
+/* ブレークポイントは834pxです。
+ スマホ表示は、３枚の画像を縦に並べます。 */
+
+@media screen and (max-width: 834px) {
+  #recipe img {
+    width: 834px;
+  }
+  #photos {
+    display: inline;
+    
+  }
+  #photos img {
+    width: 100vw;
+  }
+
+}
