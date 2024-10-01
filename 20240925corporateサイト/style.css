@@ -3,9 +3,10 @@
 
 body {
   /* max-width: 1000px; */
-  /* padding: 0 4%; */
-  margin: 0;
+  padding: 0;
+  margin: auto;
   background-color: #f0f0f0;
+  font-family: Hiragino Kaku Gothic ProN ;
 }
 img {
   width: 100%;
@@ -19,10 +20,39 @@ h1 {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 0.9rem;
 }
 
-#header .wrapper {
-  max-width: 1000px;
+.wrapper {
+ max-width: 1000px;
+ margin: auto;
+}
+
+.en {
+  font-size: 2.4rem;
+  font-family: Hiragino Kaku Gothic ProN;
+  letter-spacing: 0.3em;
+  font-weight: lighter ;
+}
+
+.jp {
+  font-size: 0.9rem;
+  font-family: Hiragino Kaku Gothic ProN;
+  /* letter-spacing: 0.3em; */
+  font-weight: lighter ;
+  /* border-bottom: #000 solid 1px; */
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 25px auto;
+  line-height: 0;
+}
+hr {
+  width: 50px;
+  text-align: left;
+  margin-left: 0px;
+  margin-bottom: 60px;
 }
 
 /* ul li{ */
@@ -39,55 +69,110 @@ a {
 }
 #header h1 img {
   width: 100px;
+  margin: auto 20px;
+}
+
+#header a{
+  margin: auto 15px;
 }
 
 #header .nav-wrap{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  width: 100vw;
+  height: 80px;
+  width: 100%;
   margin: 0;
 }
 
 
 #header .nav-left {
   display: flex;
-  align-items: center
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
 }
 
-#header .nav-right {
-}
 
 #header .nav-right {
+  display: flex;
   width: 250px;
   height: 100px;
   background-color: #000;
   color: #fff;
-  margin: 0;
+  /* margin: auto auto auto 0; */
   text-align: center;
-
+  align-items: center;
+  justify-content: center;
 }
 
 
 #header .nav-right a {
-  margin: auto;
-  align-items: center;
+
+
 
 }
 
 /* mainvisual */
 #mainvisual img {
-  width: 100vw;
+  object-fit: cover;
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin-bottom:80px ;
 }
 
 
 /* NEWS */
+.news-wrap {
+  display: flex;
+  font-size: 0.9rem;
+  margin-bottom: 100px;
+}
+
+.news-container {
+  width: 33%;
+  border-right: black solid 1px;
+  /* padding-left:10px ; */
+}
+
+.news-container2 {
+  width: 33%;
+  border-right: black solid 1px;
+  padding-left:20px ;
+}
+.news-container3 {
+  width: 33%;
+  /* border-right: black solid 1px; */
+  padding-left:20px ;
+}
 
 
+.news-date{
+  display: flex;
+}
+
+.news-date p{
+  /* font-size: 0.9rem; */
+  margin-right: 10px;
+}
+.black {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  padding: 0 5px;
+}
 
 /* ABOUT */
 
+#about {
+  border: black solid 1px;
+  object-fit: cover;
+  width: 1000px;
+  /* height: calc(100vh - 80px); */
+  margin-bottom:80px ;
+  display: flex;
+}
 
 /* BUSINESS */
 
