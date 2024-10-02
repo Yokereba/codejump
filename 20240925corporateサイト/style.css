@@ -2,14 +2,14 @@
 @charset "UTF-8";
 
 body {
-  /* max-width: 1000px; */
+  max-width: 1000px;
   padding: 0;
   margin: auto;
   background-color: #f0f0f0;
   font-family: Hiragino Kaku Gothic ProN ;
 }
 img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 h1 {
@@ -166,14 +166,32 @@ hr {
 /* ABOUT */
 
 #about {
-  border: black solid 1px;
+  /* border: black solid 1px; */
   object-fit: cover;
-  width: 1000px;
+  /* width: 1000px; */
   /* height: calc(100vh - 80px); */
   margin-bottom:80px ;
   display: flex;
+  max-width: initial;
 }
 
+.about-img {
+  width: 60%;
+  /* height: 400px; */
+  /* object-fit: cover; */
+}
+
+.about-img img{
+  /* width: 60%; */
+ 
+  height: 400px;
+}
+
+.about-container {
+  width: 40%;
+
+  padding: 150px 50px 100px 50px;
+}
 /* BUSINESS */
 
 
