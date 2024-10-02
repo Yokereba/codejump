@@ -193,6 +193,26 @@ hr {
   padding: 150px 50px 100px 50px;
 }
 /* BUSINESS */
+.business-cell {
+  display: flex;
+}
+
+.business-cell ul{
+  width: 50%;
+}
+.business-cell img{
+  width: 80%;
+}
+
+.business-cell .custommarker01 {
+  margin-top:150px ;
+  margin-left: 50px;
+}
+
+.business-cell .custommarker02 {
+  /* margin-top:150px ; */
+  margin-right: 50px;
+}
 
 
 /* COMPANY */
